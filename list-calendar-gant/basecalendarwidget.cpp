@@ -36,10 +36,10 @@ void BaseCalendarWidget::paintCell(QPainter *painter, const QRect &rect, const Q
     {
         while(sqlQuery.next())
         {
-            QString name = sqlQuery.value(0).toString();
-            QString description = sqlQuery.value(1).toString();
-            QString t1 = sqlQuery.value(2).toString();
-            QString t2 = sqlQuery.value(3).toString();
+            QString name = sqlQuery.value(1).toString();
+            QString description = sqlQuery.value(2).toString();
+            QString t1 = sqlQuery.value(3).toString();
+            QString t2 = sqlQuery.value(4).toString();
 
             QString currentData = date.toString("yyyy/MM/dd");
 

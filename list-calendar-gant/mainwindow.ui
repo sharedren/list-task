@@ -18,7 +18,7 @@
     <item>
      <widget class="QTabWidget" name="list">
       <property name="currentIndex">
-       <number>0</number>
+       <number>2</number>
       </property>
       <widget class="QWidget" name="tab_add">
        <attribute name="title">
@@ -133,12 +133,12 @@
         </property>
         <layout class="QVBoxLayout" name="whale_widget"/>
        </widget>
-       <widget class="QWidget" name="">
+       <widget class="QWidget" name="layoutWidget">
         <property name="geometry">
          <rect>
           <x>110</x>
           <y>320</y>
-          <width>352</width>
+          <width>364</width>
           <height>23</height>
          </rect>
         </property>
@@ -203,23 +203,87 @@
          <rect>
           <x>0</x>
           <y>0</y>
-          <width>1281</width>
+          <width>1090</width>
           <height>741</height>
          </rect>
         </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>1090</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="horizontalScrollBarPolicy">
+         <enum>Qt::ScrollBarAsNeeded</enum>
+        </property>
+        <property name="sizeAdjustPolicy">
+         <enum>QAbstractScrollArea::AdjustToContents</enum>
+        </property>
+        <property name="dragEnabled">
+         <bool>false</bool>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
         <property name="rowCount">
-         <number>0</number>
+         <number>1</number>
         </property>
         <property name="columnCount">
-         <number>4</number>
+         <number>5</number>
         </property>
         <attribute name="horizontalHeaderVisible">
          <bool>false</bool>
         </attribute>
+        <attribute name="horizontalHeaderCascadingSectionResizes">
+         <bool>true</bool>
+        </attribute>
+        <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="verticalHeaderCascadingSectionResizes">
+         <bool>true</bool>
+        </attribute>
+        <attribute name="verticalHeaderHighlightSections">
+         <bool>true</bool>
+        </attribute>
+        <row/>
         <column/>
         <column/>
         <column/>
         <column/>
+        <column/>
+       </widget>
+       <widget class="QPushButton" name="pushButton_del">
+        <property name="geometry">
+         <rect>
+          <x>1130</x>
+          <y>50</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>删除</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_6">
+        <property name="geometry">
+         <rect>
+          <x>1121</x>
+          <y>110</y>
+          <width>121</width>
+          <height>241</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
        </widget>
       </widget>
       <widget class="QWidget" name="tab_calendar">
@@ -239,11 +303,15 @@
          <number>0</number>
         </property>
         <property name="columnCount">
-         <number>2</number>
+         <number>3</number>
         </property>
         <attribute name="horizontalHeaderVisible">
          <bool>false</bool>
         </attribute>
+        <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <column/>
         <column/>
         <column/>
        </widget>
@@ -257,6 +325,19 @@
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout"/>
+       </widget>
+       <widget class="QPushButton" name="pushButton_del_2">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>330</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>删除</string>
+        </property>
        </widget>
       </widget>
      </widget>

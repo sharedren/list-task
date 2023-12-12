@@ -7,6 +7,8 @@
 #include <QSqlError>
 #include <QSqlQuery>
 
+#include <QTableWidgetItem>
+
 #include "basecalendarwidget.h"
 
 QT_BEGIN_NAMESPACE
@@ -24,6 +26,7 @@ public:
     ~MainWindow();
 
     int rowCount;
+    int maxid;
 
 private slots:
     void on_pushButton_add_clicked();
@@ -41,6 +44,14 @@ private slots:
     void on_pushButton_cancel_clicked();
 
     void rowCountFLush();
+
+    //void on_tableWidget_itemChanged(QTableWidgetItem *item);
+
+    void on_pushButton_del_clicked();
+
+    void on_pushButton_del_2_clicked();
+
+    void del(int id);
 
 private:
     Ui::MainWindow *ui;
